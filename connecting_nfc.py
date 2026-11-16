@@ -1,11 +1,12 @@
 #!/bin/usr/env python3
 
 import board
-import busio 
+import busio
 from adafruit_pn532.i2c import PN532_I2C
 
 i2c = busio.I2C(board.SCL, board.SDA)
 pn532 = PN532_I2C(i2c, debug= False)
+
 pn532.SAM_configuration()
 
 print("Waiting for NFC-Tag =3")
