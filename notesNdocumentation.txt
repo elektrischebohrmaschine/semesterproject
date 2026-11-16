@@ -1,0 +1,26 @@
+03.11.2026
+    Raspberry heizt schnell auf... mittlerweile geht es eh -> sehe einige Creator, die Kühlingsystem haben (in Überlegung)
+    Libraries added: (musst in venv sein)
+      adafruit-blinka 
+      Adafruit CircuitPython (This module allows you to easily write Python code that reads and writes data from and to RFID/NFC tags.)
+    SSH:
+      Verbindung zu meinem Rasp übers Netzwerk = headless
+      kann über die cmd auf meinen Rasp zugreifen und Skripte ausführen
+      man braucht nur die IP- Adresse (hostname -I) und muss das PW kennen
+    Rasp Pi Connect:
+      ist nicht an bei mir:
+      Zugriff über Browser
+      als wäre ich im Rasp drinnen, sehe alles genau so wie wenn i es anstecken würde
+09.11.2026
+    Git init
+    PAT (Personal Access Token) wurde im Git konfiguriert -> Token ist nur einmal zum Begutachten
+    **NDEF NFC DATA EXCHANGE FORMAT)**:
+        Data= NDEF Messages (store and exchange data on NFC tags and between devices) + NDEF Records (metadata describing the data, an optional ID, and a payload)
+
+        NDEF Records:
+            specific structure: https://learn.adafruit.com/adafruit-pn532-rfid-nfc/ndef
+            Record Header: steht drinnen welcher Type das ist (3Bit) -> gibt die restliche Struktur an
+            0x00         Empty Record           
+            0x01         Well-Known Record is 0x55 ('U')
+
+
